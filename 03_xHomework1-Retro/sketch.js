@@ -1,9 +1,8 @@
 //Initialization function
 function setup() {
   console.log("Initialization: ok")
-  createCanvas(300, 200);
+  createCanvas(300, 210);
 }
-
 //Rendering function
 function draw() {
   noStroke();
