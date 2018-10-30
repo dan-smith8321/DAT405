@@ -19,6 +19,6 @@ function draw() {
     //Thus, x goes from 0 to 10. Multiplying by 50 it will create this sequence:
     //0, 50, 100, 150, 200, 250, 300, 350, 400, 450
     rect(x*size, y*size, size, size);
+    fill(random(150), random(0), random(150);sssss
     }
   }
-}
