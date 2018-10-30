@@ -8,7 +8,7 @@ function setup() {
 function draw() {
   noStroke();
   fill(78,56,41);
-    rect(80,40,10,10)
+  rect(80,40,10,10)
   rect(80,40,10,10)
   rect(80,20,10,10)
   rect(80,30,10,10)
