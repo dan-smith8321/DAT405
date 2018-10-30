@@ -1,7 +1,7 @@
 //Initialization function
 function setup() {
   console.log("Initialization: ok")
-  createCanvas(300, 20);
+  createCanvas(300, 250);
 }
 //Rendering function
 function draw() {
