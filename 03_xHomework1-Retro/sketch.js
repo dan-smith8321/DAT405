@@ -39,9 +39,6 @@ function draw() {
   rect(180,10,10,10)
   rect(180,40,10,10)
 
-  console.log("Rendering...")
-  noLoop();
-}
   fill(218,142,68);
   rect(60,40,10,10)
   rect(50,50,10,10)
