@@ -1,14 +1,13 @@
 //Initialization function
 function setup() {
   console.log("Initialization: ok")
-  createCanvas(300, 250);
+  createCanvas(250, 250);
 }
+
 //Rendering function
 function draw() {
   noStroke();
   fill(78,56,41);
-  rect(80,40,10,10)
-  rect(80,40,10,10)
   rect(80,20,10,10)
   rect(80,30,10,10)
   rect(80,40,10,10)
@@ -37,6 +36,7 @@ function draw() {
   rect(170,50,10,10)
   rect(180,10,10,10)
   rect(180,40,10,10)
+
 
   fill(218,142,68);
   rect(60,40,10,10)

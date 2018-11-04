@@ -2,21 +2,34 @@
 //00_Template
 //The purpose of this sketch is to provide a basic template
 //for P5.js projects
-
+var img;
 //Initialization function
+function preload()
+{
+  // load image
+  img = loadImage("Spyro.jpg");
+}
 function setup() {
-  //Print a message to the console - to view using Chrome:
+  console.log("Initialization: OK")
+  //set canvas size
+  createCanvas(635,300);
+}
+
+// Load the image
+//Print a message to the console - to view using Chrome:
   //View > Developer > Developer Tools > Console
   console.log("Initialization: OK")
-  createCanvas(500,500);
-}
 
 //Rendering function
 function draw() {
-  //Set a background color
-  background(255, 0, 255);
+  background(255, 25, 90);
+  // Displays the image at its actual size at point (0,0)
+  image(img, 0, 0);
+  // Displays the image at point (0, height/2) at half size
 
-  //Print a message to the console - to view using Chrome:
+  //Set a background color
+
+//Print a message to the console - to view using Chrome:
   //View > Developer > Developer Tools > Console
   console.log("Rendering...")
   noLoop();
