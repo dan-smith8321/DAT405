@@ -8,14 +8,10 @@ function centerCanvas() {
 
 function setup() {
   cnv = createCanvas(400, 300);
-  rect(405,305);
-  strokeWeight(8);
+  canvas.style = "border: 8px solid grey";
   centerCanvas();
   background(160,119,168);
 }
-
-
-
 
 function windowResized() {
   centerCanvas();
@@ -24,8 +20,9 @@ function windowResized() {
 function draw() {
 textSize(30);
 text('DAT405!', 150,40);
-rect(0,400);
-strokeWeight(5);
+
+
+
 
 function preload() {
   soundFormats('mp3');
