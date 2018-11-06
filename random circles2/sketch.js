@@ -3,7 +3,7 @@ function setup() {
   //set canvas size
   createCanvas(400,300);
   background(0)
-  frameRate(80);
+  frameRate(50);
   noStroke();
 }
 
@@ -14,12 +14,14 @@ function draw() {
 function customShape(){
   var x = random(400)
   var y = random(300)
-  size = random(50)
-  size2= random(40)
-  fill(random(255), random(255), random(255));
+  size = random(60)
+  stroke(255)
+  strokeWeight(1);
+  fill(218,142,68)
   ellipse(x,y, size, size);
-  fill(random(255), random(255), random(255));
-  ellipse(x,y, size2, size2);
+
+  strokeWeight(5);
+  ellipse(x,y, size/2, size/2);
 }
 
 //for just ellipse; put the code under custom shape back under variables
