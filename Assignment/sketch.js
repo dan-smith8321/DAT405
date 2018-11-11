@@ -22,7 +22,6 @@ function mousePressed()
  song.play();
 }
 
-function loadImage();
 
 function windowResized() {
   centerCanvas();
