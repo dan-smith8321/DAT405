@@ -11,6 +11,9 @@ function draw() {
   customShape();
 }
 
+function mousePressed() {
+  fill(0) }
+
 function customShape(){
   var x = random(400)
   var y = random(300)
