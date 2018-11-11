@@ -1,5 +1,7 @@
 var cnv;
 var song;
+var img;
+
 
 function centerCanvas() {
   var x = (windowWidth - width) / 2;
@@ -12,15 +14,15 @@ function setup() {
   canvas.style = "border: 8px solid grey";
   centerCanvas();
   background(160,119,168);
-  song= loadSound("SpyroTheme.mp3");
-
-
+  var song = loadSound ("SpyroTheme.mp3");
 }
 
 function mousePressed()
 {
  song.play();
 }
+
+function loadImage();
 
 function windowResized() {
   centerCanvas();
@@ -30,8 +32,6 @@ function draw() {
 textSize(30);
 text('DAT405!', 150,40);
 
-function mousePressed() {
-  fill(0) }
 
 
 
