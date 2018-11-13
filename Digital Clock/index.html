@@ -12,6 +12,10 @@
     <body>
       <div id="clock">10:10:01</div>
       <script type= "text/javascript">
+      function setup(){
+      noCanvas();
+      }
+      
       function showtime() {
       var time = new Date();
       var hr = time.gethours();
@@ -21,6 +25,19 @@
       var currentTime = hr + ":" + min + ":" + sec ;
       document.getElementById("clock").innerHTML = currenTime();
       }
+      showTime();
+
+        function showTime(){
+        var date = new Date();
+        var h = date.getHours(); // 0 - 23
+        var m = date.getMinutes(); // 0 - 59
+        var s = date.getSeconds(); // 0 - 59
+
+        var time = h + ":" + m + ":" + s;
+        document.getElementById("clock").innerText = time;
+        document.getElementById("clock").textContent = time;
+      }
+
       showTime();
 
       </script>

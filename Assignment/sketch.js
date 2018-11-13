@@ -31,7 +31,7 @@ function windowResized() {
 
 function draw() {
 
-image(img[i], 0, 0, img.width+100, img.height+140 );
+image(img[i], 0, 0, 400, 300 );
 textSize(30)
 text('DAT405!',150,40);
 fill(0)
