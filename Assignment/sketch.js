@@ -42,6 +42,8 @@ function keyPressed(){
 
       i = i+1
       if (i>2)i=0;
+  if  (key =="2")
+  song.stop();
 
 
 }
