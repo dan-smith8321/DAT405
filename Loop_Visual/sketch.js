@@ -10,15 +10,10 @@ function setup() {
 
 function draw() {
   fill(215, 200, 170);
-
-  function keyPressed() {
-        if (key== 's')
-        fill(0);
-      } else {
-    fill(255);
-  }
-  rect(0, 1, 50, 50);
-}
+  var x = 0;
+  var x2 = width;
+  var y = 0;
+  var y2 = height
 
   //Run the nested loop for x, and y
   for (let y = 0; y < 10; y++) {
@@ -30,3 +25,13 @@ function draw() {
     }
   }
 }
+
+
+  /*function keyPressed() {
+        if (key== 's')
+        fill(0);
+      } else {
+    fill(255);
+  }
+  rect(0, 1, 50, 50);
+}*/

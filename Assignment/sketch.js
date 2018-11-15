@@ -4,6 +4,7 @@ var x,y;
 let img = [];
 var i = 0;
 
+
 function centerCanvas() {
   x = (windowWidth - width) / 2;
   y = (windowHeight - height) / 2;
