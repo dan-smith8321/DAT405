@@ -9,10 +9,10 @@ function setup() {
 
 function draw() {
   if(keyPressed){
-  customShape3();
-  }
   customShape();
+  }
   customShape2();
+  customShape3();
 }
 
 function customShape(){
@@ -44,7 +44,7 @@ function customShape3(){
 
 function keyPressed(){
   if (key== "a"){
-    customShape3();
+    customShape1();
     if (keyCode == 83){
       customShape2();
       if (keyCode ==51){

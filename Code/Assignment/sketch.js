@@ -1,3 +1,4 @@
+//These are all my variables I've used within my sketch.
 var cnv;
 var song;
 var x,y;
@@ -6,36 +7,41 @@ var i = 0;
 var currentTime;
 var gif;
 
-
+//this is how I've centered my canvas.
 function centerCanvas() {
   x = (windowWidth - width) / 2;
   y = (windowHeight - height) / 2;
   cnv.position(x, y);
 }
 
-function setup() {
+function setup(){
+  //this is my my actual canvas size.
   cnv = createCanvas(400, 300);
-  canvas.style = "border: 8px solid purple";
+  canvas.style = "border: 8px solid purple";//this is showing how i created the border around my canvas.
   centerCanvas();
-  background(160,119,168);
-  song = loadSound ("SpyroTheme.mp3");
+  background(160,119,168);//this is setting the colour of my canvas.
+  song = loadSound ("SpyroTheme.mp3");// this is how I incorporated loadsound into my sketch in order to load sound onto my assignment.
+
   img[0] = loadImage("images/spyro1.jpg");
   img[1] = loadImage("images/spyro2.jpg");
   img[2] = loadImage("images/spyro3.jpg");
-  textFont('Digital-7')
+  //I used arrays here in order to identify my 3 seperate images i wanted to use on my work.
+  textFont('Digital-7')//this is the text font I used for my digital clock on my assignment.
   gif = createImg("https://orig00.deviantart.net/c613/f/2015/194/1/8/tumblr_inline_np3mmmvbtd1qd6uv7_500_by_assortedjellies-d917zr8.gif")
-
-
+// this is the GIF I've included on my work.
 }
-
+//when mouse is pressed the sound will start.
 function mousePressed() {
   song.play();
 }
+//this is making sure that the canvas is centered.
 function windowResized() {
   centerCanvas();
 }
 
 function draw() {
+//this is setting the image and text sizes.
+//Also the fill and stroke is setting the colour and black border effect on my Digital Clock.
 image(img[i], 0, 0, 400, 300 );
 textSize(70)
 fill(225);
@@ -51,11 +57,16 @@ for(var a=0; a<width+50; a+=100){
   ellipse(a,1,20,20)
   ellipse(1,b,20,20)
   ellipse(width-1,b,20,20)
+// bottom half of this is positioning my gif on the canvas and it's size.
+// Also it's included a for function which is being used in order to
+// have the ellipses go all around the sides of the canvas.
 
 }
 }
 }
 
+//When the key "1" is pressed it switches between the 3 images
+//However when key "2" is pressed it stops the sound from playing.
 function keyPressed(){
   if  (key == "1")
 
@@ -66,6 +77,7 @@ function keyPressed(){
 
 
 }
+//This is the code I've used to create my digital clock.
 function showTime() {
 var time = new Date();
 var hr =  time.getHours();
