@@ -48,7 +48,7 @@ fill(225);
 stroke(0)
 strokeWeight(5);
 text(currentTime,60,160);
-gif.position(720,430)
+gif.position(790,430)
 gif.size(150,100)
 for(var b=0; b<height+50; b+=100){
 for(var a=0; a<width+50; a+=100){
